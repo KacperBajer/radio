@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@layer components {
+  .formInput {
+    @apply w-full px-5 py-2 rounded-xl bg-transparent border-2 border-solid border-gray-300 text-white outline-none
+  }
+  .btn-primary {
+    @apply bg-violet-500 px-5 py-2 rounded-md hover:cursor-pointer hover:bg-violet-700 duration-300 font-bold
+  }
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1D1D1F; 
+}
+::-webkit-scrollbar-thumb {
+  background: #4A4B4F; 
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #525355; 
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 50000s ease-in-out 0s, color 5000s ease-in-out 0s;
+}
