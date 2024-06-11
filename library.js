@@ -1,7 +1,7 @@
 'use server'
 
-let usr = 'root'
-let pass = 'ZAQ12wsx@#'
+let usr = ''
+let pass = ''
 
 export const getSongsReq = async (url) => {
     let headers = new Headers();
